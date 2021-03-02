@@ -8,4 +8,4 @@
 - Fonte utilizada: Poppins
 - Paleta de cores utilizada (importada do colorsinspo):
 
-![](discozipage/colorpallet.png)
+![](discozipage/colorpallete.png)
