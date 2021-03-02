@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #feb062;
+    
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: #3b301b;
+    color: #e5a024;
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > div {
+    display: flex;
+    font-size: 28px;
+    font-style: italic;
+    line-height: 42px;
+    background: #3b301b;
+
+}
+
+nav > a {
+    margin-left: 2rem;
+  font-size: 2rem;
+  background: #3b301b;
+  color: #e5a024;
+  text-decoration: none;
+}
+
+ul {
+    margin-right: 50px;
+    background: #3b301b;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: ease-in-out 0.3s;
+}
+
+ul:hover {
+    background: rgba(116, 97, 60, 0.6);
+    border-radius: 20px;
+    
+ 
+}
+
+
+section {
+    width: 100%;
+    margin-top: 10rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+#title{
+    padding: 2rem;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#title > h1 {
+
+    text-transform: uppercase;
+    font-size: 3rem;
+    
+
+}
+
+#title > h2 {
+
+    font-weight: 300;
+
+
+}
+
+#title img {
+    width: 70%;
+    margin-top: 9rem;
+    animation: rota 3s infinite alternate ease-in-out;
+}
+
+#title > input {
+    border-radius: 15px;
+    border: none;
+    background:#3b301b;
+    color: #e5a024;
+    font-weight: 600;
+    font-size: 2rem;
+    width: 12rem;
+    height: 4rem;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+#imagem {
+
+    animation: move 1s infinite alternate ease-in-out;
+   margin-top: 5rem;
+
+
+}
+
+@keyframes move {
+    from {transform: translateY(0);}
+    to {transform: translateY(15px);}
+}
+
+@keyframes appear {
+    from {transform: translateX(-15px); opacity: 0;}
+    to {transform: translateX(0px); opacity: 1;}
+}
+
+@keyframes rota {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-10deg);}
+}
+
+span{
+    color: #3b301b;
+    font-weight: 700;
+}
+
+form{
+    animation: appear 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form label span {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+}
+form input {
+
+    background: #3b301b;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    color: #feb062;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    border: none; 
+    
+}
+
+form input[type=button] {
+ cursor: pointer;
+ margin-top: 2rem;
+ font-size: 1.5rem;
+ text-transform: uppercase;
+ width: 50%;
+ 
+}
+form input[type=button]:hover{
+
+    transition: ease-in-out 0.3s;
+    background: rgba(116, 97, 60, 0.6) ;
+    color: #3b301b;
+
+}
